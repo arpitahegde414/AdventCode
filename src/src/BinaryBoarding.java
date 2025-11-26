@@ -9,7 +9,7 @@ public class BinaryBoarding {
     public List<String> parseInput(){
         List<String> passes = new ArrayList<>();
         try{
-            passes = Files.readAllLines(Paths.get("C:\\Users\\Arpita\\IdeaProjects\\AdventCode\\src\\InputFiles\\BinaryBoarding.txt"));
+            passes = Files.readAllLines(Paths.get("C:\\Users\\Arpita\\Documents\\JavaProjects\\AdventCode\\src\\src\\InputFiles\\BinaryBoarding.txt"));
             System.out.println("Parsed the file successfully");
         }
         catch(IOException e){
