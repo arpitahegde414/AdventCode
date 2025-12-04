@@ -1,6 +1,7 @@
 package Year2025;
 
 import java.io.IOException;
+import java.math.BigInteger;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.ArrayList;
@@ -34,6 +35,29 @@ public class Day3EscalaterBatteries {
                 }
             }
             result+=maxVal;
+        }
+        return result;
+    }
+
+    public long  getResultPart2(List<String> inputBatteries){
+        long result=0;
+        int k=12;
+
+        for(String battery: inputBatteries){
+            int toRemove= battery.length()-k;
+            System.out.println("Battery: "+ battery);
+            StringBuilder stack= new StringBuilder();
+
+            for(char c: battery.toCharArray()){
+                while(toRemove>0 && stack.length()>0 && stack.charAt(stack.length()-1)< c)
+                {
+                    stack.deleteCharAt(stack.length()-1);
+                    toRemove--;
+                }
+                stack.append(c);
+            }
+            System.out.println("Stack string: "+ stack);
+            result+=Long.parseLong(stack.substring(0,k));
         }
         return result;
     }
