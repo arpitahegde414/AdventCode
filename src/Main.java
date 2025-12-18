@@ -1,7 +1,4 @@
-import Year2025.Day1DailPassword;
-import Year2025.Day2InvalidProductIDs;
-import Year2025.Day3EscalaterBatteries;
-import Year2025.Day4RollsOfPaper;
+import Year2025.*;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
@@ -20,9 +17,22 @@ public class Main {
 
 //        Day3EscalaterBatteries eB = new Day3EscalaterBatteries();
 //        System.out.println(eB.getResultPart2(eB.parseInput()));
-        Day4RollsOfPaper rP = new Day4RollsOfPaper();
-        rP.parseInput();
-        //System.out.println(rP.getResultPart1());
-        System.out.println(rP.getResultPart2());
+//        Day4RollsOfPaper rP = new Day4RollsOfPaper();
+//        rP.parseInput();
+//        //System.out.println(rP.getResultPart1());
+//        System.out.println(rP.getResultPart2());
+//        Day5Ingredients i = new Day5Ingredients();
+//        i.parseInput();
+//        //System.out.println(i.getResultPart1());
+//        System.out.println(i.getResultPart2());
+//        int[] input = new int[]{3, 30, 34, 5, 9};
+//        int[] input2 = new int[]{1, 12, 3 ,14};
+//        Interview i = new Interview();
+
+//        System.out.println(i.smallest(input2));
+        String[] strs = new String[]{"eat","tea","tan","ate","nat","bat"};
+
+        QuestionGroupAngrams q = new QuestionGroupAngrams();
+         System.out.println(q.solution(strs));
     }
 }
